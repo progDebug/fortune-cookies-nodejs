@@ -79,3 +79,4 @@ typings/
 db.js
 dbConnection.js
 DB_SCHEMA.txt
+index.js
