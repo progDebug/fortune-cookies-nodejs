@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito da Sorte</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="bg-warning"> 
+    <div class="container bg-warning text-dark text-center d-flex justify-content-center flex-column" style="margin-top: 20vh;">
+        <header>
+            <img class="logo" src="/img/fortune-cookie.png" alt="">
+            <h1>Biscoito da Sorte</h1>
+        </header>
+        <main>
+            <h2 class="frase-sorte">
+                <% 
+                    max = Math.floor(360)
+                    numAleatorio = Math.floor(Math.random() * max + 1)
+                %>
+                <%= frases[numAleatorio]%>
+            </h2>
+            <div class="list-group d-inline p-2" >
+                <a href="/" class="list-group-item list-group-item-action active" style="width:150px; margin: auto;">Gerar Sorte</a>
+            </div>
+
+        </main>
+
+        
+    </div>
+</body>
+
+</html>
+<!--         <ul>
+            <% for(var i=0; i<frases.length; i++) {%>
+                <li>
+                    <%= frases[i]%>
+                </li>
+                <br>
+            <% } %>
+        </ul> -->
+
